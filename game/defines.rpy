@@ -7,4 +7,5 @@ image busstop = ("BusStop_Summer_Cloudy.png")
 image walking = ("walking.png")
 image busstop2 = ("BusStop_Summer_Night_Rain.png")
 image temple1 = ("Temple_Summer_Night_Rain.png")
-define audio.rain = ("rain.mp3")
+define audio.theme = "audio/rain.mp3"
+define audio.theme = "audio/tweetybirds.mp3"

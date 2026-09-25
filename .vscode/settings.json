@@ -5,5 +5,5 @@
         "**/*.rpymc": true,
         "**/cache/": true
     },
-    "renpyWarp.sdkPath": "c:\\Users\\Adiel\\Downloads\\renpy-8.5.2-sdk"
+    "renpyWarp.sdkPath": "/Users/adiel/Library/Application Support/Code/User/globalStorage/paisleysoftworks.renpywarp/file-downloader-downloads/8.5.3"
 }
