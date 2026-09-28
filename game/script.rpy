@@ -60,7 +60,7 @@ label convenience_store:
 label busstop:
     scene busstop with fade
     stop music
-    "After having decided you wouldn't enter the convenience. Along the way, you spy a nearby bus stop and after a while, you decided 'Why not?' and decide to go and wait for the next bus."
+    "After having decided you wouldn't enter the convenience store, you spy a nearby bus stop and after a moment of contemplation, you decided 'Why not?' and decide to go and wait for the next bus."
     scene busstop2 with fade
     play music rain fadein 1.0
     
