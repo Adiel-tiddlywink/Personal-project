@@ -64,9 +64,9 @@ menu:
         jump convenience_store 
 
     "No.":
-        show screen custom_popup(title="Ending Found!", message="You discovered the 'Going Home Hungry' ending!", button_text="Exit")
-        
+        jump busstop
 label convenience_store:
+    stop music
     scene convenience_store with fade
     "You enter the convenience store, and are greeted by shelves of food, and aisles of snacks along the flooring and a few things catch your eye.
     You come to realize that.. there's no one else in here. No customers, no cashiers.. In fact, there's no image at all!"
@@ -88,7 +88,7 @@ label convenience_store:
 
 label busstop:
     scene busstop with fade
-    "After that.. unexpected moment with Shoni, you exit out the convenience store, and keep on walking, having stolen a floating chocolate bar on the way out."
+    "After having decided to head inside, you walked for a while."
     "Along the way, you spy a nearby bus stop and after a while, you decided 'Why not?' and decide to go and wait for the next bus."
 
     scene busstop2 with fade
