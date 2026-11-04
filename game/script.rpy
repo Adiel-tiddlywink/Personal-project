@@ -1,7 +1,4 @@
-﻿# Define the logo image
-image logo = "logo.jpg"
-
-label splashscreen:
+﻿label splashscreen:
     scene black with fade
     $ renpy.pause(0.5)
     show logo with dissolve
@@ -66,5 +63,6 @@ label busstop:
     
     "After waiting for seemed as hours, rain started to pour, drenching the street and bus stop with the salted waters."
     "It had been useless to wait so long, so you just decided walk home."
+    stop music
     scene black with fade
     $ renpy.pause(hard=True)
