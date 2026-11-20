@@ -9,7 +9,7 @@
 label start:
     $ m_mouth = "smile"
     $ m_brow = "happy"
-    scene mov_back with fade
+    scene background with fade
     show maihi casual sneakers at fullbody_pos
     m "Welcome to my personal project! In this game, I want you to enjoy the game and read the story carefully, pick options that suit you!"
     show maihi notice at fullbody_pos
@@ -24,9 +24,9 @@ label start:
     m "Nice to meet you, [mc_name]!"
     m "Let's get this show going, [mc_name]!"
     
-    scene backstreet with fade
+    scene convenience_store with fade
     play music tweetybirds fadein 1.0
-    "You, [mc_name], are dropped off at the exit of Kaerdence National Airport with only your luggage and dreams.. What dreams? Up to you, bud."
+    "You, [mc_name], are dropped off at the exit of Celeste National Airport with only your luggage and dreams.. What dreams? Up to you, bud."
     "You're walking across the airport, the rustle of the bag on your back faint against the loud noises of people walking and talking as you head to find some food."
     "Along the way, you come across a convenience store, no name on it but it does have two vending machines on each side of the door, pretty convenient."
     
@@ -39,10 +39,9 @@ label start:
 
 label convenience_store:
     stop music
-    scene convenience_store with fade
+    scene error with fade
     stop music
-    "You enter the convenience store, and are greeted by shelves of food, and aisles of snacks along the flooring and a few things catch your eye."
-    "You come to realize that.. there's no one else in here. No customers, no cashiers.. In fact, there's no image at all!"
+    "You enter the convenience store, and are greeted by no customers, no cashiers.. In fact, there's no image at all!"
     show maihi exclaim casual sneakers at fullbody_pos
     $ m_mouth = "o"
     m "Oh, hey! Uhhh.. there's no image here right now!"
@@ -66,4 +65,16 @@ label busstop:
     "It had been useless to wait so long, so you just decided walk home."
     stop music
     scene black with fade
+    jump house
+label house:
+    scene house:
+        xysize(1920,1080)
+    "After a long, arduous tirty minute walk... You're finally at the stop of your home!"
+    mc "Finally.. This whole trip tooko so long to take! I missed the damned bus too. I'm just glad to be home."
+    mc "I need a long nap.. I'm so tired."
+    scene black with fade
+    $ renpy.pause(2.0)
+    scene sayori_bedroom at Transform(xysize=(1920, 1080)) with fade
+    
+
     $ renpy.pause(hard=True)

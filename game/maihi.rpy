@@ -147,7 +147,7 @@ transform fullbody_pos():
 image maihi = LayeredImageProxy("maihi_image", Transform(mesh=True, alpha=1.0))
 # This makes sure Maihi's sprite displays correctly when modifying the transparency eg. with dissolve/ease/linear
 
-define m = Character("Maihi", image="maihi")
+define m = Character("Mizuki", image="maihi")
 
 ##### # # # # # # # #
 ##### EXAMPLE LABEL #
