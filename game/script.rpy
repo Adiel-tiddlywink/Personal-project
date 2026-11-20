@@ -11,18 +11,18 @@ label start:
     $ m_brow = "happy"
     scene mov_back with fade
     show maihi casual sneakers at fullbody_pos
-    s "Welcome to my personal project! In this game, I want you to enjoy the game and read the story carefully, pick options that suit you!"
+    m "Welcome to my personal project! In this game, I want you to enjoy the game and read the story carefully, pick options that suit you!"
     show maihi notice at fullbody_pos
     $ m_brow = "suspicious"
-    s "Now tell me, what is the name of your character?"
+    m "Now tell me, what is the name of your character?"
     
     $ mc_name = renpy.input("What is your name?")
     $ mc_name = mc_name.strip() or "MC"
         
     show maihi None at fullbody_pos
     $ m_brow = "happy"
-    s "Nice to meet you, [mc_name]!"
-    s "Let's get this show going, [mc_name]!"
+    m "Nice to meet you, [mc_name]!"
+    m "Let's get this show going, [mc_name]!"
     
     scene backstreet with fade
     play music tweetybirds fadein 1.0
@@ -44,11 +44,11 @@ label convenience_store:
     "You come to realize that.. there's no one else in here. No customers, no cashiers.. In fact, there's no image at all!"
     show maihi exclaim casual sneakers at fullbody_pos
     $ m_mouth = "o"
-    s "Oh, hey! Uhhh.. there's no image here right now!"
+    m "Oh, hey! Uhhh.. there's no image here right now!"
     show maihi question casual sneakers at fullbody_pos
     $ m_brow = "sad"
     $ m_mouth = "biggrin"
-    s "Oops.. not sure what happened here.. {w=1.5}{nw}"
+    m "Oops.. not sure what happened here.. {w=1.5}{nw}"
     show maihi exclaim casual sneakers at fullbody_pos
     extend "Why not come back at a later update to see if I've an image to show, hm?"
     hide maihi exclaim casual sneakers

@@ -1,4 +1,4 @@
-define s = Character("Shoni", color="#7a7fc5")
+define m = Character("Mizuki", color="#7a7fc5")
 image logo = "logo.jpg"
 image mov_back = Movie(size=(1920, 1080), play="images/background.ogg")
 image city = ("city.jpg")
